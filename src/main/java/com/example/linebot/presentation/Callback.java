@@ -1,6 +1,7 @@
 package com.example.linebot.presentation;
 
 import com.example.linebot.presentation.replier.Follow;
+import com.example.linebot.presentation.replier.ImageSizeReply;
 import com.example.linebot.presentation.replier.Parrot;
 import com.example.linebot.sevice.ReceiptResult;
 import com.example.linebot.sevice.ReceiptSaveService;
@@ -44,6 +45,6 @@ public class Callback {
     public List<Message> handleReceipt(MessageEvent<ImageMessageContent> event) throws Exception {
         ReceiptResult receiptResult = receiptSaveService.getReceipt(event);
 
-        return List.of(new TextMessage(receiptResult.toString()));
+        return List.of(new ImageSizeReply(receiptResult).reply());
     }
 }
