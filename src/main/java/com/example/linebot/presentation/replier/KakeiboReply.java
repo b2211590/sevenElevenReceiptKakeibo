@@ -4,9 +4,6 @@ import com.example.linebot.sevice.Kakeibo;
 import com.linecorp.bot.model.message.Message;
 import com.linecorp.bot.model.message.TextMessage;
 
-import java.util.ArrayList;
-import java.util.List;
-
 public class KakeiboReply implements Replier{
 
     public static final String MESSAGE_FORMAT = "%s %d 円\n";
