@@ -1,1 +1,3 @@
 # sevenElevenReceiptDetect
+
+セブンイレブンのレシートの画像をLINEbotに上げることで, 日時と合計金額を認識してくれるサービスのようなものです.
